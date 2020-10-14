@@ -1,0 +1,156 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*GENERAL STYLES*/
+p, h1, h2, a
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7rem;
+    text-decoration: none;
+}
+
+/*HEADER SECTION*/
+.nav-top 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #333333;
+    justify-items: start;
+}
+
+.nav-top > div:nth-child(1)
+{
+    padding: 10px 20% ;
+    color: #ffffff;
+}
+
+.nav-top > div:nth-child(2)
+{
+    padding: 15px 20% 15px 50%;  
+}
+
+.nav-top a
+{
+    color: #ffffff;
+}
+
+
+.nav-links
+{
+    display: inline-block; 
+    padding: 0 10px;
+    color: #ffffff; 
+}
+
+/*ABOUT SECTION*/
+#about-section
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#about-left
+{
+    padding: 70px;
+}
+
+#about-left > h2
+{
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+#about-section > img
+{
+    padding: 50px;
+    margin: 50px 100px 50px 200px;
+    border-radius: 50%;
+}
+
+/*REVIEW SECTION*/
+#reviews-section
+{
+    background-image: url(../img/test-bg.jpg);
+    padding: 100px 30px 40px 30px;
+}
+
+#reviews-section > h2
+{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+#review-background-top, #review-background-bottom
+{
+    background-color: #f7c08a;
+    padding: 30px;
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+}
+
+#reviews-section img
+{
+    border-radius: 50%;
+    margin-left: 50px;
+}
+
+/*Contact Form Styles*/
+#form-heading
+{
+    padding: 30px 30px 10px 50px;
+}
+
+#form-heading > h2
+{
+    margin-bottom: 30px;
+}
+
+#form-content
+{
+    margin-left: 50px;
+}
+
+#submit-button
+{
+    padding: 10px 50px
+}
+
+#submit-button > input
+{
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+#contact-last-section
+{
+    color: #fff;
+    background-color: #333;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px;
+    text-align: center;
+    height: 30vh;
+    margin-top: 75px;
+}
+
+#contact-last-section > div > h4
+{
+    margin-bottom: 40px;
+}
+
+/*Footer Section*/
+footer
+{
+    text-align: center;
+    background-color: #444;
+    color: #ffffff;
+    padding: 20px 0 10px 0;
+}

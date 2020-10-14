@@ -1,0 +1,292 @@
+/*VARIABLES DECLARATION*/
+:root
+{
+    --primary-bg-color: #333333;
+    --secondary-bg-color: #f4f4f4;
+    --secondary-bg-color-2: #444444;
+    --highlight-color: #f8bf8a;
+
+    --primary-txt-color: #f4f4f4;
+    --secondary-txt-color: #333333;
+    --txt-highlight-color: #f8bf8a;
+
+    --primary-btn-bg-color: #333333;
+    --secondary-btn-bg-color: #f4f4f4;
+}
+
+/*CSS RESET*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*GENERAL STYLES - inhereted*/
+body 
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.4;
+}
+
+/*UTILITIES CLASSES - things being repeated*/
+a
+{
+    text-decoration: none;
+}
+
+p
+{
+    margin-bottom: 30px;
+}
+
+.container
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.text-highlight
+{
+    color: var(--txt-highlight-color);
+}
+
+.link
+{
+    display: inline-block;
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.link-primary
+{
+    background-color: var(--primary-bg-color);
+    color: var(--primary-txt-color);
+}
+
+.link-secondary
+{
+    background-color: var(--secondary-bg-color);
+    color: var(--secondary-txt-color);
+}
+
+.grid
+{
+    display: grid;
+}
+
+.grid-col-2
+{
+    grid-template-columns: repeat(2,1fr);
+}
+
+.grid-col-3
+{
+    grid-template-columns: repeat(3,1fr);
+}
+
+img
+{
+    width: 100%;
+    max-width: 100%;
+}
+
+/*HEADER*/
+header
+{
+    background-color: var(--primary-bg-color);
+    color: var(--primary-txt-color);
+    position: sticky;
+    width: 100%;
+    top: 0;
+}
+
+.logo
+{
+    color: var(--primary-txt-color);
+}
+
+.grid-header
+{
+    grid-template-columns: 100px 1fr;
+}
+
+header nav
+{
+    justify-self: end;
+}
+
+header nav li
+{
+    display: inline-block;
+    padding: 16px 32px;
+}
+
+.selected-link
+{
+    background-color: var(--secondary-bg-color-2);
+}
+
+/*HERO SECTION*/
+#hero-main
+{
+    height: 600px;
+    background-image: url(../img/showcase.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: var(--primary-txt-color);
+    padding: 60px 0 0 0;
+}
+
+#hero-main h2
+{
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+}
+
+/*HISTORY SECTION*/
+#history-section, #history-section div
+{
+    height: 300px;
+}
+
+#history-section img
+{
+    height: 100%;
+    object-fit: cover;
+}
+
+#history-section > div:nth-child(2)
+{
+    background-color: var(--primary-bg-color);
+    text-align: center;
+    color: var(--primary-txt-color);
+    padding: 0 32px;
+}
+
+#history-section > div:nth-child(2) h3
+{
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+/*FEATURES SECTION*/
+#features-section
+{
+    text-align: center;
+}
+
+#features-section i
+{
+    font-size: 32px;
+    margin: 16px 0 16px 0;
+}
+
+#features-section > div:nth-child(2)
+{
+    background-color: var(--highlight-color);
+}
+
+#features-section h4
+{
+   margin-bottom: 16px; 
+}
+
+/*FOOTER*/
+footer
+{
+    background-color: var(--secondary-bg-color-2);
+    text-align: center;
+    padding: 16px 0;
+    color: var(--primary-txt-color);
+}
+
+footer p
+{
+    margin-bottom: 0;
+}
+
+/*Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) 
+{
+    
+}
+
+/*Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) 
+{ 
+   
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) 
+{
+    .grid-col-2, .grid-col-3, .grid-header
+    {
+        grid-template-columns: 1fr;
+    }
+
+    #history-section, #history-section > div
+    {
+        height: auto;
+        /*you can also remove this completely and get the same effect*/
+    }
+   
+    #history-section > div:nth-child(1)
+    {
+        display: none;
+    }
+
+    #history-section > div:nth-child(2)
+    {
+        padding: 16px 32px;
+    }
+
+    #history-section > div:nth-child(2) h3
+    {
+        margin-top: 5px;
+    }
+
+    #hero-main
+    {
+        height: auto;
+        padding: 32px;
+    }
+
+    header nav li
+    {
+        display: block;
+        border-bottom: 1px dotted var(--primary-txt-color);
+    }
+
+    header nav
+    {
+        justify-self: center;
+        width: 100%;
+    }
+
+    header 
+    {
+        text-align: center;
+    }
+
+    .selected-link
+    {
+        background-color: transparent;
+    }
+
+    .container > nav li:nth-child(3)
+    {
+        border-bottom: none;
+    }
+}
+
+
+
+
+
