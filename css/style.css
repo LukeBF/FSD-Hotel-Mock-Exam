@@ -36,6 +36,11 @@ a
     text-decoration: none;
 }
 
+.link a
+{
+    color: var(--primary-txt-color);
+}
+
 p
 {
     margin-bottom: 30px;
@@ -94,6 +99,16 @@ img
     max-width: 100%;
 }
 
+.selected-link:hover
+{
+    background-color: var(--secondary-bg-color-2);
+}
+
+.selected-link a:hover
+{
+    color: var(--highlight-color);
+}
+
 /*HEADER*/
 header
 {
@@ -125,9 +140,9 @@ header nav li
     padding: 16px 32px;
 }
 
-.selected-link
+header li a
 {
-    background-color: var(--secondary-bg-color-2);
+    color: var(--primary-txt-color);
 }
 
 /*HERO SECTION*/

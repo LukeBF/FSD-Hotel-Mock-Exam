@@ -2,68 +2,69 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About</title>
-        <link rel="stylesheet" href="../css/style-about.css">
         <script src="https://kit.fontawesome.com/098dc84e4b.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/style-about.css">
     </head>
 
     <body>
-        <nav class="nav-top">
-            <div>
-                <h1>FSD</h1>
+         <!--HEADER SECTION-->
+         <header>
+            <div class="grid grid-header container">
+                <h1>
+                    <a href="" class="logo">FSD</a>
+                </h1>
+                <nav>
+                    <ul>
+                        <li class="selected-link"><a href="../index.html">Home</a></li>
+                        <li><a href="./html/about.html">About</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-            
-            <div>
-                <ul>
-                    <li class="nav-links"><a href="../index.html">Home</a></li>
-                    <li class="nav-links"><a href="../html/about.html">About</a></li>
-                    <li class="nav-links"><a href="#">Contact</a></li>  
-                </ul>
-            </div>
-        </nav>
+        </header>
 
-        <section id="about-section">
-            <div id="about-left">
-                <h2><span style="color: #f7c08a">About</span> Hotel FSD</h2>
+        <!--ABOUT SECTION-->
+        <section id="about-section" class="grid grid-col-2 container">
+            <div class="about-text">
+                <h2><span class="text-highlight">About</span> Hotel FSD</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis lacus at metus bibendum, 
-                    a sodales risus cursus. Nunc a ex quam. Sed sed est at dui semper euismod. Suspendisse posuere vitae 
-                    lectus ullamcorper sagittis. Praesent in nisi diam. Suspendisse potenti. Nam vehicula id ante vitae 
-                    dictum. Etiam suscipit leo vel nisl iaculis, quis pulvinar lorem commodo. <br> <br>
-                    Mauris sit amet orci id eros vulputate auctor.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacinia quis vel eros donec ac. Arcu non sodales neque sodales ut etiam sit amet nisl. Sed adipiscing diam donec adipiscing tristique risus nec feugiat. Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. <br><br>Vitae purus faucibus ornare suspendisse sed nisi. Donec massa sapien faucibus et. Arcu cursus euismod quis viverra nibh cras pulvinar mattis. Adipiscing diam donec adipiscing tristique risus nec. Ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus. 
+            </div>
 
-                    Vivamus non tincidunt orci, nec lobortis nisi. Sed fermentum mattis tincidunt. Proin id ultrices tortor, 
-                    in aliquam enim. Donec auctor blandit sollicitudin. Etiam ullamcorper nisi maximus, rhoncus tellus in, 
-                    porttitor augue. Cras nec tincidunt enim, et bibendum nisi. Duis in odio sit amet urna aliquam dignissim.
+            <div>
+                <img src="../img/photo-2.jpg" width="500px" alt="Picture of a building">
+            </div>  
+        </section>
+
+        <!--REVIEWS SECTION-->
+        <section id="reviews-section">
+            <h2>What Our Guests Say</h2>
+            
+            <div class="review review-top grid grid-mix">
+                <img src="../img/person-1.jpg" width="100px">
+
+                <p> 
+                    Vivamus non tincidunt orci, nec lobortis nisi. Sed fermentum mattis tincidunt. 
+                    Proin id ultrices tortor, in aliquam enim. Donec auctor blandit sollicitudin. 
+                    Etiam ullamcorper nisi maximus, rhoncus tellus in, porttitor augue. 
+                    Cras nec tincidunt enim, et bibendum nisi. Duis in odio sit amet urna aliquam dignissim.
                 </p>
             </div>
 
-            <img src="../img/photo-2.jpg" width="500px" alt="Picture of a building">  
-        </section>
-
-        <section id="reviews-section">
-            <h2>What Our Guests Say</h2>
-            <div id="review-background-top">
-                <img src="../img/person-1.jpg" width="100px" >
-                
-                <div>
-                    <p> Vivamus non tincidunt orci, nec lobortis nisi. Sed fermentum mattis tincidunt. 
-                        Proin id ultrices tortor, in aliquam enim. Donec auctor blandit sollicitudin. 
-                        Etiam ullamcorper nisi maximus, rhoncus tellus in, porttitor augue. 
-                        Cras nec tincidunt enim, et bibendum nisi. Duis in odio sit amet urna aliquam dignissim.
-                    </p>
-                </div>
-            </div>
-
-            <div id="review-background-bottom">
+            <div class="review review-bottom grid grid-mix">
                 <img src="../img/person-2.jpg" width="100px">
-                <p>Vivamus non tincidunt orci, nec lobortis nisi. Sed fermentum mattis tincidunt. 
+                <p>
+                    Vivamus non tincidunt orci, nec lobortis nisi. Sed fermentum mattis tincidunt. 
                     Proin id ultrices tortor, in aliquam enim. Donec auctor blandit sollicitudin. 
                     Etiam ullamcorper nisi maximus, rhoncus tellus in, porttitor augue. 
-                    Cras nec tincidunt enim, et bibendum nisi. Duis in odio sit amet urna aliquam dignissim.</p>
+                    Cras nec tincidunt enim, et bibendum nisi. Duis in odio sit amet urna aliquam dignissim.
+                </p>
             </div>
         </section>
 
+        <!--FOOTER-->
         <footer>
             <p>
                 The Weekend Hack &#64; 2020. All Rights Reserved
