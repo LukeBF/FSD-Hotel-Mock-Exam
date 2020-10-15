@@ -225,6 +225,11 @@ footer p
     }
 
     /*ABOUT SECTION-MQ*/
+    #about-section
+    {
+        grid-template-columns: 1fr;
+    }
+
     .about-text h2
     {
         text-align: center;
@@ -235,7 +240,8 @@ footer p
     {
         text-align: justify;
     }
-
+  
+    /*REVIEWS SECTION-MQ*/
     #reviews-section > h2
     {
         margin-top: -70px;
@@ -243,17 +249,8 @@ footer p
 
     #about-section > div:nth-child(2) > img
     {
-        width: 100%;
         padding: 0;
     }
-
-    /*REVIEWS SECTION-MQ*/
-    #reviews-section > h2
-    {
-        margin-top: -70px;
-    }
-
-
 }
 
 /*Small devices (landscape phones, less than 768px)*/
@@ -362,7 +359,7 @@ footer p
     {
         padding: 10px 20px;
         margin-top: -70px;
-        font-size: 1.4rem;
+        font-size: 1.1rem;
     }
 
     #reviews-section p

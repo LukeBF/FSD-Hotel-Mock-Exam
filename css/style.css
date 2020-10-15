@@ -246,6 +246,11 @@ footer p
         grid-template-columns: 1fr;
     }
 
+    #hero-main h2
+    {
+        font-size: 1.4rem
+    }
+
     #history-section, #history-section > div
     {
         height: auto;
